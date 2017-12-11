@@ -8,6 +8,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     setWindowTitle("Viikkotiedotegeneraattori");
     resize(600, 400);
+    setStyleSheet("background-color: #DDEEFF");
 
     QVBoxLayout *mainLayout = new QVBoxLayout;
     widget->setLayout(mainLayout);

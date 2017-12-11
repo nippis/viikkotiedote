@@ -27,9 +27,11 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     tiedote.cpp \
-    tiedotewidget.cpp
+    tiedotewidget.cpp \
+    tiedotteet.cpp
 
 HEADERS += \
         mainwindow.hh \
     tiedote.hh \
-    tiedotewidget.hh
+    tiedotewidget.hh \
+    tiedotteet.hh
