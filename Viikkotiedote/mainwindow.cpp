@@ -28,6 +28,8 @@ MainWindow::MainWindow(QWidget *parent)
     buttonLayout->addWidget(buttonAddTiedote_);
     mainLayout->addLayout(buttonLayout);
 
+    connect(buttonAddTiedote_, SIGNAL(pressed()), this, SLOT(addTiedote()));
+
     createMenus();
 }
 
@@ -40,4 +42,10 @@ void MainWindow::createMenus()
 {
     fileMenu_ = menuBar()->addMenu("File");
 
+}
+
+void MainWindow::addTiedote()
+{
+    AddTiedoteWindow *addingWindow = new AddTiedoteWindow;
+    addingWindow->setVisible(true);
 }

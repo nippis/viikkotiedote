@@ -1,6 +1,8 @@
 #ifndef MAINWINDOW_HH
 #define MAINWINDOW_HH
 
+#include "addtiedotewindow.hh"
+
 #include <QMainWindow>
 #include <QMenu>
 #include <QMenuBar>
@@ -26,6 +28,12 @@ private:
     QPushButton *buttonAddTiedote_;
 
     void createMenus();
+
+signals:
+
+public slots:
+    void addTiedote();
+
 };
 
 #endif // MAINWINDOW_HH
