@@ -15,7 +15,7 @@ QString Tiedote::text() const
     return text_;
 }
 
-TiedoteWidget Tiedote::widget() const
+TiedoteWidget* Tiedote::widget() const
 {
     return widget_;
 }

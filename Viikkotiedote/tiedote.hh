@@ -10,7 +10,7 @@ public:
 
     QString title() const;
     QString text() const;
-    TiedoteWidget widget() const;
+    TiedoteWidget* widget() const;
 
     void setTitle(QString& input);
     void setText(QString& input);
