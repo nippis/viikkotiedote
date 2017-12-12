@@ -50,4 +50,15 @@ void MainWindow::openTiedoteWindow()
     AddTiedoteWindow *addingWindow = new AddTiedoteWindow;
     addingWindow->setVisible(true);
 
+    connect(addingWindow, SIGNAL(tiedoteAdded(QString,QString)),
+            this, SLOT(addTiedote(QString,QString)));
+}
+
+void MainWindow::addTiedote(QString otsikko, QString teksti)
+{
+    tiedoteVector.addTiedote(otsikko, teksti);
+    for (Tiedote tiedote : tiedoteVector.tiedotteet())
+    {
+        tiedoteLayout_->addWidget(tiedote.widget());
+    }
 }

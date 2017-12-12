@@ -17,7 +17,7 @@ public:
     ~AddTiedoteWindow();
 
 signals:
-    void TiedoteAdded(QString otsikko, QString teksti);
+    void tiedoteAdded(QString otsikko, QString teksti);
 
 public slots:
     void addTiedote();

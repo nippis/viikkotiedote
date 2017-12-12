@@ -42,7 +42,7 @@ AddTiedoteWindow::~AddTiedoteWindow()
 
 void AddTiedoteWindow::addTiedote()
 {
-    emit TiedoteAdded(otsikkoEdit_->toPlainText(), tekstiEdit_->toPlainText());
+    emit tiedoteAdded(otsikkoEdit_->toPlainText(), tekstiEdit_->toPlainText());
     this->close();
 }
 

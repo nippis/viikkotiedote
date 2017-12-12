@@ -2,6 +2,8 @@
 #define MAINWINDOW_HH
 
 #include "addtiedotewindow.hh"
+#include "tiedotteet.hh"
+#include "tiedote.hh"
 
 #include <QMainWindow>
 #include <QMenu>
@@ -27,12 +29,15 @@ private:
 
     QPushButton *buttonAddTiedote_;
 
+    Tiedotteet tiedoteVector;
+
     void createMenus();
 
 signals:
 
 public slots:
     void openTiedoteWindow();
+    void addTiedote(QString otsikko, QString teksti);
 
 };
 

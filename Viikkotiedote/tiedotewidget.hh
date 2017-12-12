@@ -2,6 +2,10 @@
 #define TIEDOTEWIDGET_HH
 
 #include <QWidget>
+#include <QString>
+#include <QLabel>
+#include <QPushButton>
+#include <QHBoxLayout>
 
 class TiedoteWidget : public QWidget
 {
@@ -14,7 +18,8 @@ signals:
 public slots:
 
 private:
-
+    QLabel *number_;
+    QLabel *title_;
 
 };
 

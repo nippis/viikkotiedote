@@ -1,8 +1,9 @@
 #include "tiedote.hh"
 
-Tiedote::Tiedote()
+Tiedote::Tiedote(QString otsikko, QString teksti):
+    title_(otsikko), text_(teksti)
 {
-
+    widget_ = new TiedoteWidget();
 }
 
 QString Tiedote::title() const

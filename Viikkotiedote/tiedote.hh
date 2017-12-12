@@ -3,10 +3,12 @@
 
 #include "tiedotewidget.hh"
 
+#include <QString>
+
 class Tiedote
 {
 public:
-    Tiedote();
+    Tiedote(QString otsikko, QString teksti);
 
     QString title() const;
     QString text() const;
