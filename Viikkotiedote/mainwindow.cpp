@@ -28,7 +28,8 @@ MainWindow::MainWindow(QWidget *parent)
     buttonLayout->addWidget(buttonAddTiedote_);
     mainLayout->addLayout(buttonLayout);
 
-    connect(buttonAddTiedote_, SIGNAL(pressed()), this, SLOT(addTiedote()));
+    connect(buttonAddTiedote_, SIGNAL(pressed()),
+            this, SLOT(openTiedoteWindow()));
 
     createMenus();
 }
@@ -44,8 +45,9 @@ void MainWindow::createMenus()
 
 }
 
-void MainWindow::addTiedote()
+void MainWindow::openTiedoteWindow()
 {
     AddTiedoteWindow *addingWindow = new AddTiedoteWindow;
     addingWindow->setVisible(true);
+
 }

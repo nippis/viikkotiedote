@@ -2,7 +2,6 @@
 #define TIEDOTEWIDGET_HH
 
 #include <QWidget>
-#include <QString>
 
 class TiedoteWidget : public QWidget
 {
@@ -13,6 +12,10 @@ public:
 signals:
 
 public slots:
+
+private:
+
+
 };
 
 #endif // TIEDOTEWIDGET_HH

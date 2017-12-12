@@ -32,7 +32,7 @@ private:
 signals:
 
 public slots:
-    void addTiedote();
+    void openTiedoteWindow();
 
 };
 
